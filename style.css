@@ -15,11 +15,68 @@
   background-color: blueviolet;
   display: flex;
 }
+/* /////////////SIDEBAR//////////// */
 #sidebar {
   width: 150px;
   height: 100%;
-  background-color: brown;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
 }
+.logo {
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  margin: 10px 20px;
+}
+.menu {
+  font-size: 10px;
+  color: #6a6a6a;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.menu div {
+  margin: 10px 20px;
+}
+
+.playlist {
+  color: #6a6a6a;
+  margin: 0 20px;
+  font-weight: bold;
+}
+.playlist h3 {
+  color: white;
+  margin-bottom: 5px;
+}
+.crea {
+  display: flex;
+  align-items: center;
+  margin: 10px 0 15px;
+}
+.crea span {
+  font-weight: bold;
+  margin-left: 5px;
+}
+.fa-square-plus {
+  font-size: 35px;
+}
+
+.col_playlist span {
+  margin-bottom: 15px;
+  display: block;
+  font-size: 10px;
+}
+.download {
+  color: #6a6a6a;
+  padding-left: 20px;
+  border-bottom: 1px solid #6a6a6a;
+  margin-right: 20px;
+}
+.user {
+  color: #6a6a6a;
+  padding-left: 20px;
+}
+/* /////////////SIDEBAR//////////// */
 #main_content {
   /* width: calc(100vw - 250px); */
   flex-grow: 1;
@@ -43,6 +100,7 @@
   color: white;
   font-weight: bold;
 }
+/* ///////////// CONTROLLER ///////////// */
 
 #controller {
   height: 100px;
@@ -115,3 +173,4 @@
   font-size: 15px;
   color: white;
 }
+/* ///////////// CONTROLLER ///////////// */
