@@ -31,18 +31,48 @@
       </div>
     </div>
     <div id="controller">
-      <div class="playing">
-        <div class="album">
-          <img src="img/sinister.jpeg" alt="" />
-          <div class="track">
-            <span class="track_name">Sinister</span>
-            <span class="artist">Brano Nome</span>
-          </div>
-          <div class="add">
-            <i class="fa-regular fa-heart"></i>
-            <i class="fa-regular fa-folder"></i>
-          </div>
+      <div class="container album">
+        <img src="img/sinister.jpeg" alt="" />
+        <div class="track">
+          <span class="track_name">Sinister</span>
+          <span class="artist">Brano Nome</span>
         </div>
+        <div class="add">
+          <i class="fa-regular fa-heart"></i>
+          <i class="fa-regular fa-folder"></i>
+        </div>
+      </div>
+      <div class="container player">
+        <div class="col_commands">
+          <i class="fa-solid fa-shuffle"></i>
+          <i class="fa-solid fa-forward-step fa-rotate-180"></i>
+          <i class="fa-regular fa-circle-play"></i>
+          <i class="fa-solid fa-forward-step"></i>
+          <i class="fa-solid fa-rotate-right"></i>
+        </div>
+        <div class="slider">
+          <input
+            type="range"
+            min="1"
+            max="100"
+            value="50"
+            class="slider"
+            id="myRange"
+          />
+        </div>
+      </div>
+      <div class="container volume">
+        <i class="fa-solid fa-bars"></i>
+        <i class="fa-solid fa-tv"></i>
+        <i class="fa-solid fa-volume-high"></i>
+        <input
+          type="range"
+          min="1"
+          max="100"
+          value="50"
+          class="soundbar"
+          id="myRange"
+        />
       </div>
     </div>
   </body>
