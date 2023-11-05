@@ -7,7 +7,7 @@
 
 :root {
   scroll-behavior: smooth;
-  font-size: 12px;
+  font-size: 10px;
 }
 
 #wrapper_up {
@@ -100,7 +100,7 @@
 }
 main {
   background-color: #1c1d27;
-  padding-bottom: 100px;
+  padding-bottom: 40px;
 }
 .bar {
   display: flex;
@@ -127,12 +127,14 @@ main {
   color: #6a6a6a;
 }
 
-.naviga ul {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
+.naviga {
   list-style: none;
-  flex: wrap;
+  text-align: center;
+  margin-top: 10px;
+}
+ul li {
+  display: inline;
+  margin-right: 10px;
 }
 .contenitore {
   margin: 30px 15px;
@@ -165,9 +167,13 @@ main {
 }
 .cover {
   width: 100%;
+  border-radius: 50%;
 }
 .cover img {
   width: 100%;
+}
+.rounded {
+  border-radius: 50%;
 }
 /* ///////////////MAIN//////////////// */
 
@@ -209,7 +215,7 @@ main {
 }
 .add i {
   color: #6a6a6a;
-  font-size: 15px;
+  font-size: 10px;
   margin-right: 15px;
 }
 .player {
@@ -217,7 +223,7 @@ main {
   align-items: center;
 }
 .col_commands {
-  font-size: 25px;
+  font-size: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -233,7 +239,7 @@ main {
 }
 
 .fa-circle-play {
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .volume {
@@ -242,10 +248,63 @@ main {
   gap: 15px;
   align-items: center;
   margin-right: 10px;
-  font-size: 15px;
+  font-size: 10px;
   color: white;
 }
 .soundbar {
   width: 30%;
 }
 /* ///////////// CONTROLLER ///////////// */
+
+/* //////////////////////RESPONSIVE///////////////////// */
+
+@media screen and (max-width: 768px) {
+  .row {
+    flex-wrap: wrap;
+  }
+  .box {
+    flex-basis: calc(25% - 10px);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .row {
+    flex-wrap: wrap;
+  }
+  .box {
+    flex-basis: calc(50% - 10px);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  /* .row {
+    flex-wrap: wrap;
+  }
+  .box {
+    flex-basis: calc(50% - 10px);
+  } */
+  #sidebar {
+    width: 40px;
+    height: 100%;
+    background-color: black;
+    position: relative;
+  }
+  .logo span,
+  .menu span,
+  .playlist,
+  .download span,
+  .user span {
+    display: none;
+  }
+  .logo {
+    font-size: 15px;
+    text-align: center;
+    margin: unset;
+    margin-top: 10px;
+  }
+  .menu div {
+    text-align: center;
+    margin: unset;
+    margin-top: 10px;
+  }
+}
