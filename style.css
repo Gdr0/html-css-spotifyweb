@@ -126,13 +126,16 @@ main {
   background-color: #1c1d27;
   padding-bottom: 40px;
 }
+
 .bar {
-  display: flex;
-  justify-content: end;
   background-color: #111119;
-  width: 100%;
+  width: calc(100% - 180px);
   padding: 20px 0;
   opacity: 0.8;
+  position: fixed;
+  display: flex;
+  justify-content: end;
+  z-index: 1;
 }
 .bar a {
   border: solid 1px white;
@@ -154,7 +157,7 @@ main {
 .naviga {
   list-style: none;
   text-align: center;
-  margin-top: 10px;
+  margin-top: 100px;
 }
 ul li:hover {
   cursor: pointer;
@@ -194,7 +197,6 @@ ul li {
   flex-basis: calc((100% / 6) - 10px);
 }
 .play {
-  position: absolute;
   display: none;
 }
 .play i {
@@ -205,7 +207,6 @@ ul li {
   margin: 10px 0;
 }
 .cover {
-  position: relative;
   width: 100%;
   border-radius: 50%;
   display: flex;
@@ -220,10 +221,12 @@ ul li {
 }
 .box:hover {
   filter: brightness(50%);
+  cursor: pointer;
 }
 .box:hover .play {
   display: block;
   cursor: pointer;
+  position: absolute;
 }
 /* ///////////////MAIN//////////////// */
 
