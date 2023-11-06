@@ -28,13 +28,21 @@
   margin: 10px 20px;
 }
 .menu {
-  font-size: 10px;
+  font-size: 12px;
   color: #6a6a6a;
   margin-bottom: 20px;
   font-weight: bold;
 }
+.menu i {
+  font-size: 14px;
+  margin-right: 5px;
+}
+.home {
+  border-left: solid 2px #8fff2b;
+}
 .menu div {
-  margin: 10px 20px;
+  margin: 10px 0px;
+  padding: 0 20px;
 }
 
 .playlist {
@@ -62,7 +70,7 @@
 .col_playlist span {
   margin-bottom: 15px;
   display: block;
-  font-size: 10px;
+  font-size: 12px;
 }
 .download {
   color: #6a6a6a;
@@ -85,6 +93,15 @@
   font-size: 20px;
   margin-right: 5px;
 }
+
+.item:hover,
+.playlist_name:hover,
+.crea:hover,
+.download:hover {
+  color: white;
+  cursor: pointer;
+}
+
 /* /////////////SIDEBAR//////////// */
 /* ///////////////MAIN//////////////// */
 #main_content {
@@ -132,6 +149,13 @@ main {
   text-align: center;
   margin-top: 10px;
 }
+ul li:hover {
+  cursor: pointer;
+  color: white;
+}
+.in_ev {
+  border-bottom: solid 2px #8fff2b;
+}
 ul li {
   display: inline;
   margin-right: 10px;
@@ -162,18 +186,37 @@ ul li {
   display: inline-block;
   flex-basis: calc((100% / 6) - 10px);
 }
+.play {
+  position: absolute;
+  display: none;
+}
+.play i {
+  font-size: 50px;
+  color: white;
+}
 .box h4 {
   margin: 10px 0;
 }
 .cover {
+  position: relative;
   width: 100%;
   border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .cover img {
   width: 100%;
 }
 .rounded {
   border-radius: 50%;
+}
+.box:hover {
+  filter: brightness(50%);
+}
+.box:hover .play {
+  display: block;
+  cursor: pointer;
 }
 /* ///////////////MAIN//////////////// */
 
@@ -215,8 +258,8 @@ ul li {
 }
 .add i {
   color: #6a6a6a;
-  font-size: 10px;
-  margin-right: 15px;
+  font-size: 14px;
+  margin-right: 10px;
 }
 .player {
   flex-direction: column;
@@ -253,6 +296,18 @@ ul li {
 }
 .soundbar {
   width: 30%;
+}
+.artist:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.add i:hover {
+  color: white;
+  cursor: pointer;
+}
+.col_commands .fa-circle-play:hover {
+  font-size: 25px;
+  cursor: pointer;
 }
 /* ///////////// CONTROLLER ///////////// */
 
